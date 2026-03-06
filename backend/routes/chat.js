@@ -23,7 +23,29 @@ router.post("/", async (req,res)=>{
             error:err.message
         })
 
-    }
+    }router.post("/", async (req,res)=>{
+
+  const { message, model } = req.body
+
+  try{
+
+    const response = await generateResponse(message, model)
+
+    res.json({
+      success:true,
+      data:response
+    })
+
+  }catch(err){
+
+    res.status(500).json({
+      success:false,
+      error:err.message
+    })
+
+  }
+
+})
 
 })
 
