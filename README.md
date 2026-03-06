@@ -35,3 +35,35 @@ Features:
 - usage tracking
 - scalable microservices
 - Kubernetes deployment
+
+#Project
+
+ai-startup-platform/
+│
+├── frontend/                 # Next.js AI web app
+│
+├── backend/                  # API server
+│   ├── routes/
+│   ├── services/
+│   ├── middleware/
+│   ├── config/
+│   └── server.js
+│
+├── ai-engine/                # LLM orchestration
+│
+├── vector-db/                # embeddings + memory
+│
+├── auth/                     # authentication system
+│
+├── billing/                  # Stripe billing
+│
+├── infra/
+│   ├── docker/
+│   └── kubernetes/
+│
+├── .env.example
+├── docker-compose.yml
+└── README.md
+
+
+
