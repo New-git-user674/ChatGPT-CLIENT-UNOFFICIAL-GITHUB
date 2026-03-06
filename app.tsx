@@ -31,7 +31,36 @@ function App() {
 
     </div>
 
-  )
+  )async function sendMessage(text:string, model:string){
+
+  const userMsg = {role:"user",content:text}
+
+  setMessages(prev => [...prev,userMsg])
+
+  const res = await fetch("http://localhost:5000/api/chat",{
+
+    method:"POST",
+
+    headers:{
+      "Content-Type":"application/json"
+    },
+
+    body:JSON.stringify({
+      message:text,
+      model:model
+    })
+
+  })
+
+  const data = await res.json()
+
+  const aiMsg = {
+    role:"assistant",
+    content:data.data
+  }
+
+  setMessages(prev => [...prev,aiMsg])
+}
 }
 
 export default App
