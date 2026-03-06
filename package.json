@@ -1,0 +1,14 @@
+{
+  "name": "chatgpt-client",
+  "version": "1.0.0",
+  "description": "Simple ChatGPT client using OpenAI API",
+  "type": "module",
+  "main": "client.js",
+  "scripts": {
+    "start": "node example.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "openai": "^4.0.0"
+  }
+}
