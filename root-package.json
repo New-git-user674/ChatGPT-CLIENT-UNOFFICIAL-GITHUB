@@ -1,0 +1,13 @@
+{
+  "name": "ai-saas-platform",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bash scripts/dev.sh",
+    "build": "turbo run build"
+  }
+}
