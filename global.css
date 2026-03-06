@@ -60,3 +60,12 @@ body{
     border-radius:6px;
     color:white;
 }
+
+.model-selector{
+margin-right:10px;
+padding:10px;
+border-radius:6px;
+border:none;
+background:#1e293b;
+color:white;
+}
