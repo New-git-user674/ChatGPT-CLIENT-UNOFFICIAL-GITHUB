@@ -22,3 +22,16 @@ npm start
 # No Malware✅
 
 If it had malware i would be banned from the site as giving a virus to people
+
+# AI SaaS Platform
+
+Production-ready AI platform template.
+
+Features:
+
+- AI chat
+- agent tools
+- RAG document search
+- usage tracking
+- scalable microservices
+- Kubernetes deployment
